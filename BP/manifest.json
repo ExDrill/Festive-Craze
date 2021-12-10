@@ -1,0 +1,58 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"ExDrill and Keke"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.1.5"
+			]
+		}
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			17,
+			0
+		],
+		"uuid": "479e3da8-bcd7-400d-8269-8fdfd37f6280",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "545399a3-77e1-4a35-9a59-f1065a1048d1",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "client_data",
+			"uuid": "ff68799b-9e0e-4804-a6b1-8e4ebbf8f892",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "7fc73148-374c-4409-8867-2d6e76f35541",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

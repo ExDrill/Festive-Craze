@@ -1,0 +1,41 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Festive Craze",
+	"namespace": "festive_craze",
+	"authors": [
+		"ExDrill and Keke"
+	],
+	"targetVersion": "1.17.40",
+	"description": "",
+	"experimentalGameplay": {
+		"cavesAndCliffs": true,
+		"holidayCreatorFeatures": true,
+		"creationOfCustomBiomes": true,
+		"additionalModdingCapabilities": true,
+		"upcomingCreatorFeatures": true,
+		"enableGameTestFramework": false,
+		"experimentalMolangFeatures": true,
+		"educationEdition": false
+	},
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	},
+	"compiler": {
+		"plugins": [
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			[
+				"simpleRewrite",
+				{
+					"packName": "Festive Craze"
+				}
+			]
+		]
+	}
+}
