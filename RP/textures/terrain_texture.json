@@ -13,6 +13,15 @@
 			"textures": [
 				"textures/blocks/red_present"
 			]
+		},
+		"red_ornament": {
+			"textures": "textures/blocks/red_ornament"
+		},
+		"green_ornament": {
+			"textures": "textures/blocks/green_ornament"
+		},
+		"golden_ornament": {
+			"textures": "textures/blocks/golden_ornament"
 		}
 	}
 }

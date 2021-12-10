@@ -1,6 +1,10 @@
 pack.name=Festive Craze RP
-pack.description=
+
 
 
 tile.festive_crave:white_present.name=White Present 
 tile.festive_crave:red_present.name=Red Present 
+pack.description=Created by Keke and ExDrill
+
+tile.festive_craze:red_ornament.name=Red Ornament
+tile.festive_craze:green_ornament.name=Green Ornament

@@ -1,0 +1,61 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "festive_craze:golden_ornament"
+		},
+		"components": {
+			"minecraft:block_light_absorption": 0,
+			"minecraft:breathability": "air",
+			"minecraft:geometry": "geometry.ornament",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "golden_ornament",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:entity_collision": {
+				"origin": [ -3, 7, -3 ],
+				"size": [ 6, 8, 6 ]
+			},
+			"minecraft:pick_collision": {
+				"origin": [ -3, 7, -3 ],
+				"size": [ 6, 8, 6 ]
+			},
+			"minecraft:block_light_emission": 0.2,
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [ 1, 1 ],
+				"on_tick": {
+					"event": "particle",
+					"target": "self"
+				}
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"down"
+						],
+						"block_filter": [
+							"minecraft:leaves",
+							"minecraft:leaves2",
+							"minecraft:azalea_leaves",
+							"minecraft:azalea_leaves_flowered"
+						]
+					}
+				]
+			}
+		},
+		"events": {
+			"particle": {
+				"run_command": {
+					"command": [ "particle festive_craze:golden_ornament_aura ~ ~0.2 ~"],
+					"target": "self"
+				}
+			}
+		}
+	}
+}

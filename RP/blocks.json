@@ -3,5 +3,11 @@
 		1,
 		1,
 		0
-	]
+	],
+	"festive_craze:red_ornament": {
+		"sound": "copper"
+	},
+	"festive_craze:green_ornament": {
+		"sound": "copper"
+	}
 }
