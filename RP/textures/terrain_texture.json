@@ -3,5 +3,15 @@
 	"padding": 8,
 	"resource_pack_name": "Festive Craze",
 	"texture_name": "atlas.terrain",
-	"texture_data": {}
+	"texture_data": {
+		"red_ornament": {
+			"textures": "textures/blocks/red_ornament"
+		},
+		"green_ornament": {
+			"textures": "textures/blocks/green_ornament"
+		},
+		"golden_ornament": {
+			"textures": "textures/blocks/golden_ornament"
+		}
+	}
 }

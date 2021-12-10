@@ -1,2 +1,5 @@
 pack.name=Festive Craze RP
-pack.description=
+pack.description=Created by Keke and ExDrill
+
+tile.festive_craze:red_ornament.name=Red Ornament
+tile.festive_craze:green_ornament.name=Green Ornament
