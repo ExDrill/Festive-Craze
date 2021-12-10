@@ -1,0 +1,32 @@
+{
+	"format_version": "1.17.20",
+	"minecraft:block": {
+		"description": {
+			"identifier": "festive_craze:white_present"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "white_present",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:geometry": "geometry.present",
+			"minecraft:block_light_absorption": 0,
+			"minecraft:pick_collision": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					8,
+					12,
+					8
+				]
+			}
+		}
+	}
+}

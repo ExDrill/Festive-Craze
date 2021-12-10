@@ -1,0 +1,20 @@
+{
+	"format_version": "1.17.20",
+	"minecraft:block": {
+		"description": {
+			"identifier": "festive_craze:red_present"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.present",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "red_present",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:block_light_absorption": 0
+		}
+	}
+}
