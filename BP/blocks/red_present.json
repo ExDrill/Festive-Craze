@@ -10,11 +10,35 @@
 				"*": {
 					"texture": "red_present",
 					"render_method": "alpha_test",
-					"ambient_occlusion": false,
-					"face_dimming": false
+					"ambient_occlusion": true,
+					"face_dimming": true
 				}
 			},
-			"minecraft:block_light_absorption": 0
+			"minecraft:block_light_absorption": 0,
+			"minecraft:pick_collision": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					8,
+					10
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					8,
+					10
+				]
+			}
 		}
 	}
 }

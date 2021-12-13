@@ -9,8 +9,8 @@
 				"*": {
 					"texture": "white_present",
 					"render_method": "alpha_test",
-					"ambient_occlusion": false,
-					"face_dimming": false
+					"ambient_occlusion": true,
+					"face_dimming": true
 				}
 			},
 			"minecraft:geometry": "geometry.present",
@@ -22,9 +22,21 @@
 					-5
 				],
 				"size": [
+					10,
 					8,
-					12,
-					8
+					10
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					8,
+					10
 				]
 			}
 		}
