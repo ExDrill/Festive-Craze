@@ -22,6 +22,7 @@
 		},
 		"golden_ornament": {
 			"textures": "textures/blocks/golden_ornament"
-		}
+		},
+		"white_tinsel": {}
 	}
 }
