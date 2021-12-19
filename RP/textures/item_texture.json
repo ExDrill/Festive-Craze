@@ -1,5 +1,21 @@
 {
 	"resource_pack_name": "Festive Craze",
 	"texture_name": "atlas.items",
-	"texture_data": {}
+	"texture_data": {
+		"white_tinsel": {
+			"textures": "textures/blocks/white_tinsel"
+		},
+		"red_tinsel": {
+			"textures": "textures/blocks/red_tinsel"
+		},
+		"green_tinsel": {
+			"textures": "textures/blocks/green_tinsel"
+		},
+		"yellow_tinsel": {
+			"textures": "textures/blocks/yellow_tinsel"
+		},
+		"blue_tinsel": {
+			"textures": "textures/blocks/blue_tinsel"
+		}
+	}
 }

@@ -23,6 +23,23 @@
 		"golden_ornament": {
 			"textures": "textures/blocks/golden_ornament"
 		},
-		"white_tinsel": {}
+		"white_tinsel": {
+			"textures": "textures/blocks/white_tinsel"
+		},
+		"red_tinsel": {
+			"textures": "textures/blocks/red_tinsel"
+		},
+		"green_tinsel": {
+			"textures": "textures/blocks/green_tinsel"
+		},
+		"yellow_tinsel": {
+			"textures": "textures/blocks/yellow_tinsel"
+		},
+		"blue_tinsel": {
+			"textures": "textures/blocks/blue_tinsel"
+		},
+		"invisible_texture": {
+			"textures": "textures/blocks/invis_texture"
+		}
 	}
 }

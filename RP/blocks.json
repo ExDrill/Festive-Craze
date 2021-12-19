@@ -9,5 +9,8 @@
 	},
 	"festive_craze:green_ornament": {
 		"sound": "copper"
+	},
+	"festive_craze:white_tinsel": {
+		"sound": "spore_blossom"
 	}
 }
