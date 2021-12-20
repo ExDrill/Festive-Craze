@@ -1,0 +1,82 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "festive_craze:green_tinsel_item"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "green_tinsel"
+			},
+			"minecraft:on_use_on": {
+				"on_use_on": {
+					"condition": "t.u=query.block_face;return 1;",
+					"event": "set_variable"
+				}
+			},
+			"minecraft:block_placer": {
+				"block": "festive_craze:green_tinsel"
+			}
+		},
+		"events": {
+			"set_variable": {
+				"sequence": [
+					{
+						"condition": "t.u==0",
+						"run_command": {
+							"command": [
+								"playsound place.spore_blossom @a ~ ~ ~"
+							],
+							"target": "self"
+						}
+					},
+					{
+						"condition": "t.u==1",
+						"run_command": {
+							"command": [
+								"playsound place.spore_blossom @a ~ ~ ~"
+							],
+							"target": "self"
+						}
+					},
+					{
+						"condition": "t.u==2",
+						"run_command": {
+							"command": [
+								"playsound place.spore_blossom @a ~ ~ ~"
+							],
+							"target": "self"
+						}
+					},
+					{
+						"condition": "t.u==3",
+						"run_command": {
+							"command": [
+								"playsound place.spore_blossom @a ~ ~ ~"
+							],
+							"target": "self"
+						}
+					},
+					{
+						"condition": "t.u==4",
+						"run_command": {
+							"command": [
+								"playsound place.spore_blossom @a ~ ~ ~"
+							],
+							"target": "self"
+						}
+					},
+					{
+						"condition": "t.u==5",
+						"run_command": {
+							"command": [
+								"playsound place.spore_blossom @a ~ ~ ~"
+							],
+							"target": "self"
+						}
+					}
+				]
+			}
+		}
+	}
+}

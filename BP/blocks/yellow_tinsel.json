@@ -1,0 +1,140 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "festive_craze:yellow_tinsel",
+			"properties": {
+				"festive_craze:rotation": [
+					2,
+					3,
+					4,
+					5
+				],
+				"festive_craze:visible": [
+					false,
+					true
+				]
+			}
+		},
+		"events": {
+			"festive_craze:set_rotation": {
+				"set_block_property": {
+					"festive_craze:rotation": "query.block_face",
+					"festive_craze:visible": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "yellow_tinsel",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:loot": "loot_tables/blocks/yellow_tinsel.json",
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					1
+				]
+			},
+			"minecraft:entity_collision": false,
+			"minecraft:breathability": "air",
+			"minecraft:geometry": "geometry.tinsel",
+			"minecraft:block_light_absorption": 0,
+			"minecraft:destroy_time": 0,
+			"minecraft:on_placed": {
+				"event": "festive_craze:set_rotation"
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"side"
+						],
+						"block_filter": [
+							"minecraft:leaves",
+							"minecraft:leaves2",
+							"minecraft:azalea_leaves",
+							"minecraft:azalea_leaves_flowered"
+						]
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('festive_craze:rotation') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('festive_craze:rotation') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('festive_craze:rotation') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('festive_craze:rotation') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('festive_craze:visible') == false",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "invisible_texture",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('festive_craze:visible') == true",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_tinsel",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false,
+							"face_dimming": false
+						}
+					}
+				}
+			}
+		]
+	}
+}
