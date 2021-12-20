@@ -1,0 +1,62 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "festive_craze:frost_cannon_projectile",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:snowball"
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"anchor": 1,
+				"on_hit": {
+					"impact_damage": {
+						"filter": "blaze",
+						"damage": 3,
+						"knockback": true
+					},
+					"remove_on_hit": {},
+					"particle_on_hit": {
+						"particle_type": "snowballpoof",
+						"num_particles": 6,
+						"on_entity_hit": true,
+						"on_other_hit": true
+					},
+					"definition_event": {
+						"event_trigger": {
+							"event": "festive_craze:op"
+						}
+					}
+				},
+				"power": 2,
+				"gravity": 0.03,
+				"angle_offset": 0,
+				"offset": [
+					0,
+					-0.1,
+					0
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			}
+		},
+		"events": {
+			"festive_craze:op": {
+				"run_command": {
+					"command": [
+						"effect @e[r=2] slowness 7 7"
+					]
+				}
+			}
+		}
+	}
+}

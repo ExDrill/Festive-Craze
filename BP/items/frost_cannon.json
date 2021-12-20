@@ -17,7 +17,7 @@
 		"events": {
 			"shoot": {
 				"shoot": {
-					"projectile": "minecraft:snowball",
+					"projectile": "festive_craze:frost_cannon_projectile",
 					"launch_power": 0.5
 				}
 			}
