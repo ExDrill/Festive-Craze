@@ -16,7 +16,8 @@
 				"snowflake": "festive_craze:snowflake"
 			},
 			"animations": {
-				"controller": "controller.animation.frost_ball"
+				"controller": "controller.animation.frost_ball",
+				"general": "animation.frost_ball.general"
 			},
 			"scripts": {
 				"animate": [

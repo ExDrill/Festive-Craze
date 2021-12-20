@@ -2,23 +2,35 @@
 	"format_version": "1.16.0",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "festive_craze:frost_cannon_projectile",
+			"identifier": "festive_craze:frost_ball",
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
 			"runtime_identifier": "minecraft:snowball"
+		},
+		"component_groups": {
+			"instant_despawn": {
+				"minecraft:instant_despawn": {}
+			}
 		},
 		"components": {
 			"minecraft:collision_box": {
 				"width": 0.25,
 				"height": 0.25
 			},
+			"minecraft:timer": {
+				"looping": true,
+				"time": 10,
+				"time_down_event": {
+					"event": "instant_despawn",
+					"target": "self"
+				}
+			},
 			"minecraft:projectile": {
 				"anchor": 1,
 				"on_hit": {
 					"impact_damage": {
-						"filter": "blaze",
-						"damage": 3,
+						"damage": 5,
 						"knockback": true
 					},
 					"remove_on_hit": {},
@@ -34,8 +46,8 @@
 						}
 					}
 				},
-				"power": 2,
-				"gravity": 0.03,
+				"power": 1.5,
+				"gravity": 0.0,
 				"angle_offset": 0,
 				"offset": [
 					0,
@@ -54,6 +66,13 @@
 				"run_command": {
 					"command": [
 						"effect @e[r=2] slowness 7 7"
+					]
+				}
+			},
+			"instant_despawn": {
+				"add": {
+					"component_groups": [
+						"instant_despawn"
 					]
 				}
 			}
