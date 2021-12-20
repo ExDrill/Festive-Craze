@@ -1,0 +1,160 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+          "wants": [
+            {
+              "item": "emerald",
+              "quantity": 1
+            }
+          ],
+          "gives": [
+            {
+              "item": "festive_craze:red_ornament",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "emerald",
+              "quantity": 1
+            }
+          ],
+          "gives": [
+            {
+              "item": "festive_craze:green_ornament",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "emerald",
+              "quantity": 1
+            }
+          ],
+          "gives": [
+            {
+              "item": "festive_craze:golden_ornament",
+              "quantity": 4
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "emerald",
+              "quantity": 1
+            }
+          ],
+          "gives": [
+            {
+              "item": "festive_craze:white_tinsel_item",
+              "quantity": 16
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "emerald",
+              "quantity": 1
+            }
+          ],
+          "gives": [
+            {
+              "item": "festive_craze:red_tinsel_item",
+              "quantity": 16
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "emerald",
+              "quantity": 1
+            }
+          ],
+          "gives": [
+            {
+              "item": "festive_craze:green_tinsel_item",
+              "quantity": 16
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "emerald",
+              "quantity": 1
+            }
+          ],
+          "gives": [
+            {
+              "item": "festive_craze:yellow_tinsel_item",
+              "quantity": 16
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "emerald",
+              "quantity": 1
+            }
+          ],
+          "gives": [
+            {
+              "item": "festive_craze:blue_tinsel_item",
+              "quantity": 16
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "emerald",
+              "quantity": 10
+            }
+          ],
+          "gives": [
+            {
+              "item": "festive_craze:red_present",
+              "quantity": 1,
+              "functions": [
+                {
+                  "function": "set_lore",
+                  "lore": [ "Be sure to give them to your friends!" ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "emerald",
+              "quantity": 10
+            }
+          ],
+          "gives": [
+            {
+              "item": "festive_craze:white_present",
+              "quantity": 1,
+              "functions": [
+                {
+                  "function": "set_lore",
+                  "lore": [ "Be sure to give them to your friends!" ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

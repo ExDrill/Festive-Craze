@@ -2,9 +2,16 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "festive_craze:red_ornament"
+			"identifier": "festive_craze:red_ornament",
+			"properties": {
+				"festive_craze:held": [ false, true ]
+			}
 		},
 		"components": {
+			"minecraft:on_player_placing": {
+				"event": "on_placed",
+				"target": "self"
+			},
 			"minecraft:block_light_absorption": 0,
 			"minecraft:breathability": "air",
 			"minecraft:geometry": "geometry.ornament",
@@ -36,6 +43,27 @@
 						]
 					}
 				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('festive_craze:held') == false",
+				"components": {
+					"minecraft:geometry": "geometry.ornament_held"
+				}
+			},
+			{
+				"condition": "query.block_property('festive_craze:held') == true",
+				"components": {
+					"minecraft:geometry": "geometry.ornament"
+				}
+			}
+		],
+		"events": {
+			"on_placed": {
+				"set_block_property": {
+					"festive_craze:held": true
+				}
 			}
 		}
 	}

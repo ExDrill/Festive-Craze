@@ -6,7 +6,7 @@
 		},
 		"components": {
 			"minecraft:icon": {
-				"texture": "white_tinsel"
+				"texture": "red_tinsel"
 			},
 			"minecraft:on_use_on": {
 				"on_use_on": {

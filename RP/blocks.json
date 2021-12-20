@@ -12,5 +12,17 @@
 	},
 	"festive_craze:white_tinsel": {
 		"sound": "spore_blossom"
+	},
+	"festive_craze:red_tinsel": {
+		"sound": "spore_blossom"
+	},
+	"festive_craze:blue_tinsel": {
+		"sound": "spore_blossom"
+	},
+	"festive_craze:green_tinsel": {
+		"sound": "spore_blossom"
+	},
+	"festive_craze:yellow_tinsel": {
+		"sound": "spore_blossom"
 	}
 }

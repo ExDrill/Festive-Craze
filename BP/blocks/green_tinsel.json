@@ -127,7 +127,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "white_tinsel",
+							"texture": "green_tinsel",
 							"render_method": "alpha_test",
 							"ambient_occlusion": false,
 							"face_dimming": false

@@ -8,5 +8,15 @@ pack.description=Created by Keke and ExDrill
 
 tile.festive_craze:red_ornament.name=Red Ornament
 tile.festive_craze:green_ornament.name=Green Ornament
+tile.festive_craze:golden_ornament.name=Golden Ornament
+tile.festive_craze:red_present.name=Red Present
+tile.festive_craze:white_present.name=White Present
+tile.festive_craze:corrupted_present.name=Corrupted Present
 
-item.festive_craze:white_tinsel=White Tinsel
+item.festive_craze:white_tinsel_item=White Tinsel
+item.festive_craze:red_tinsel_item=Red Tinsel
+item.festive_craze:blue_tinsel_item=Blue Tinsel
+item.festive_craze:yellow_tinsel_item=Yellow Tinsel
+item.festive_craze:green_tinsel_item=Green Tinsel
+
+

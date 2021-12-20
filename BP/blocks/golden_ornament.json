@@ -2,7 +2,10 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "festive_craze:golden_ornament"
+			"identifier": "festive_craze:golden_ornament",
+			"properties": {
+				"festive_craze:held": [ false, true ]
+			}
 		},
 		"components": {
 			"minecraft:block_light_absorption": 0,
@@ -15,6 +18,10 @@
 					"ambient_occlusion": false,
 					"face_dimming": false
 				}
+			},
+			"minecraft:on_player_placing": {
+				"event": "on_placed",
+				"target": "self"
 			},
 			"minecraft:entity_collision": {
 				"origin": [ -3, 7, -3 ],
@@ -49,7 +56,26 @@
 				]
 			}
 		},
+		"permutations": [
+			{
+				"condition": "query.block_property('festive_craze:held') == false",
+				"components": {
+					"minecraft:geometry": "geometry.ornament_held"
+				}
+			},
+			{
+				"condition": "query.block_property('festive_craze:held') == true",
+				"components": {
+					"minecraft:geometry": "geometry.ornament"
+				}
+			}
+		],
 		"events": {
+			"on_placed": {
+				"set_block_property": {
+					"festive_craze:held": true
+				}
+			},
 			"particle": {
 				"run_command": {
 					"command": [ "particle festive_craze:golden_ornament_aura ~ ~0.2 ~"],

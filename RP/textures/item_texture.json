@@ -16,6 +16,9 @@
 		},
 		"blue_tinsel": {
 			"textures": "textures/blocks/blue_tinsel"
+		},
+		"frost_cannon": {
+			"textures": "textures/items/frost_cannon"
 		}
 	}
 }

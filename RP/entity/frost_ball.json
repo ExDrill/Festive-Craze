@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "festive_craze:frost_ball",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/frost_ball"
+			},
+			"geometry": {
+				"default": "geometry.frost_ball"
+			},
+			"particle_effects": {
+				"snowflake": "festive_craze:snowflake"
+			},
+			"animations": {
+				"controller": "controller.animation.frost_ball"
+			},
+			"scripts": {
+				"animate": [
+					"controller"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

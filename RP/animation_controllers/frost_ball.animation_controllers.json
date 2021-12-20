@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.frost_ball": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"controller"
+					],
+					"particle_effects": [
+						{
+							"effect": "snowflake",
+							"locator": "locator"
+						}
+					]
+				}
+			}
+		}
+	}
+}
