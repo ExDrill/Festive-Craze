@@ -16,6 +16,9 @@
 			"minecraft:cooldown": {
 				"duration": 2,
 				"category": "ice"
+			},
+			"minecraft:icon": {
+				"texture": "frost_cannon"
 			}
 		},
 		"events": {

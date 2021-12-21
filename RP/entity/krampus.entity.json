@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "festive_craze:krampus",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/krampus"
+			},
+			"geometry": {
+				"default": "geometry.krampus"
+			},
+			"animations": {
+				"move.arms": "animation.krampus.move.arms",
+				"move.legs": "animation.krampus.move.legs",
+				"roar": "animation.krampus.roar",
+				"attack": "animation.krampus.attack",
+				"shooting": "animation.krampus.shooting",
+				"bob": "animation.humanoid.bob",
+				"controller": "controller.animation.krampus"
+			},
+			"scripts": {
+				"pre_animation": [
+					"variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+				],
+				"animate": [
+					"controller",
+					"bob"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

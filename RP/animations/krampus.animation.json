@@ -1,0 +1,210 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.krampus.move.arms": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [ "variable.tcos0", 0, 0 ]
+				},
+				"rightArm": {
+					"rotation": [ "-variable.tcos0", 0, 0 ]
+				}
+			}
+		},
+		"animation.krampus.move.legs": {
+			"loop": true,
+			"bones": {
+				"leftLeg": {
+					"rotation": [ "-variable.tcos0", 0, 0 ]
+				},
+				"rightLeg": {
+					"rotation": [ "variable.tcos0", 0, 0 ]
+				}
+			}
+		},
+		"animation.krampus.roar": {
+			"loop": true,
+			"animation_length": 1.48,
+			"bones": {
+				"head": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.28": {
+							"post": [45, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.72": [45, 0, 0],
+						"0.88": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.28": [0, 0, 0]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.28": {
+							"post": [45, 0, -22.5],
+							"lerp_mode": "catmullrom"
+						},
+						"0.72": {
+							"post": [45, 0, -22.5],
+							"lerp_mode": "catmullrom"
+						},
+						"0.88": {
+							"post": [-112.5, -45, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.28": [-112.5, -45, 0],
+						"1.44": [0, 0, 0]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.28": {
+							"post": [45, 0, 22.5],
+							"lerp_mode": "catmullrom"
+						},
+						"0.72": {
+							"post": [45, 0, 22.5],
+							"lerp_mode": "catmullrom"
+						},
+						"0.88": {
+							"post": [-112.5, 45, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.28": [-112.5, 45, 0],
+						"1.44": [0, 0, 0]
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.28": {
+							"post": [45, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.44": {
+							"post": [67.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.72": [67.5, 0, 0],
+						"0.88": {
+							"post": [-22.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.28": [-22.5, 0, 0],
+						"1.44": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.krampus.attack": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"leftArm": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.28": {
+							"post": [-202.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.56": {
+							"post": [-202.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.68": {
+							"post": [-45, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.88": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.28": {
+							"post": [-202.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.56": {
+							"post": [-202.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.68": {
+							"post": [-45, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.88": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.28": {
+							"post": [-45, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.56": {
+							"post": [-45, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.68": {
+							"post": [22.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.88": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.krampus.shooting": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [-67.5, 22.5, 0]
+				},
+				"rightArm": {
+					"rotation": [-67.5, -22.5, 0]
+				},
+				"body": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		}
+	}
+}

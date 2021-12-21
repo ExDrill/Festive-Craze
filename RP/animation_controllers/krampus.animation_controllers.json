@@ -1,0 +1,50 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.krampus": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"move.arms": "!query.is_delayed_attacking"
+						},
+						"move.legs",
+						{
+							"attack": "query.is_delayed_attacking"
+						}
+					],
+					"transitions": [
+						{
+							"shooting": "query.facing_target_to_range_attack"
+						},
+						{
+							"roaring": "query.is_roaring"
+						}
+					]
+				},
+				"shooting": {
+					"animations": [
+						"shooting",
+						"move.legs"
+					],
+					"transitions": [
+						{
+							"default": "!query.facing_target_to_range_attack"
+						}
+					]
+				},
+				"roaring": {
+					"animations": [
+						"roar"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_roaring"
+						}
+					]
+				}
+			}
+		}
+	}
+}
