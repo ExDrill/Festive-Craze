@@ -4,6 +4,12 @@
 		1,
 		0
 	],
+	"festive_craze:red_present": {
+		"sound": "cloth"
+	},
+	"festive_craze:white_present": {
+		"sound": "cloth"
+	},
 	"festive_craze:red_ornament": {
 		"sound": "copper"
 	},

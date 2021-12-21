@@ -18,5 +18,8 @@ item.festive_craze:red_tinsel_item=Red Tinsel
 item.festive_craze:blue_tinsel_item=Blue Tinsel
 item.festive_craze:yellow_tinsel_item=Yellow Tinsel
 item.festive_craze:green_tinsel_item=Green Tinsel
+item.festive_craze:frost_cannon=Frost Cannon
 
+item.spawn_egg.entity.festive_craze:krampus.name=Spawn Krampus
+entity.festive_craze:krampus.name=Krampus
 
