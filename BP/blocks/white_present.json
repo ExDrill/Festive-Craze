@@ -5,6 +5,10 @@
 			"identifier": "festive_craze:white_present"
 		},
 		"components": {
+			"minecraft:on_player_destroyed": {
+				"event": "destroy",
+				"target": "self"
+			},
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "white_present",
@@ -13,6 +17,7 @@
 					"face_dimming": true
 				}
 			},
+			"minecraft:loot": "loot_tables/blocks/present.json",
 			"minecraft:geometry": "geometry.present",
 			"minecraft:block_light_absorption": 0,
 			"minecraft:pick_collision": {
@@ -38,6 +43,16 @@
 					8,
 					10
 				]
+			}
+		},
+		"events": {
+			"destroy": {
+				"run_command": {
+					"command": [
+						"particle festive_craze:confetti_particle ~ ~ ~"
+					],
+					"target": "self"
+				}
 			}
 		}
 	}

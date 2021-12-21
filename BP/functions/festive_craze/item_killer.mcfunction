@@ -1,1 +1,5 @@
 kill @e[type=item,name=tile.festive_craze:white_tinsel.name]
+kill @e[type=item,name=tile.festive_craze:blue_tinsel.name]
+kill @e[type=item,name=tile.festive_craze:red_tinsel.name]
+kill @e[type=item,name=tile.festive_craze:green_tinsel.name]
+kill @e[type=item,name=tile.festive_craze:yellow_tinsel.name]

@@ -12,7 +12,8 @@
 						"move.legs",
 						{
 							"attack": "query.is_delayed_attacking"
-						}
+						},
+						"fist"
 					],
 					"transitions": [
 						{
@@ -27,6 +28,16 @@
 					"animations": [
 						"shooting",
 						"move.legs"
+					],
+					"particle_effects": [
+						{
+							"effect": "snowflake",
+							"locator": "righthand"
+						},
+						{
+							"effect": "snowflake",
+							"locator": "lefthand"
+						}
 					],
 					"transitions": [
 						{

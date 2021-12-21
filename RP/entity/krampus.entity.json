@@ -19,7 +19,11 @@
 				"attack": "animation.krampus.attack",
 				"shooting": "animation.krampus.shooting",
 				"bob": "animation.humanoid.bob",
-				"controller": "controller.animation.krampus"
+				"controller": "controller.animation.krampus",
+				"fist": "animation.krampus.fist"
+			},
+			"particle_effects": {
+				"snowflake": "festive_craze:snowflake"
 			},
 			"scripts": {
 				"pre_animation": [

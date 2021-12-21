@@ -11,6 +11,33 @@
 		"component_groups": {
 			"instant_despawn": {
 				"minecraft:instant_despawn": {}
+			},
+			"krampus": {
+				"minecraft:projectile": {
+					"anchor": 1,
+					"on_hit": {
+						"impact_damage": {
+							"damage": 5,
+							"knockback": false
+						},
+						"remove_on_hit": {},
+						"particle_on_hit": {
+							"particle_type": "snowballpoof",
+							"num_particles": 5,
+							"on_entity_hit": true
+						},
+						"definition_event": {
+							"event_trigger": {
+								"event": "festive_craze:op"
+							}
+						}
+					},
+					"power": 0.75,
+					"gravity": 0,
+					"homing": true,
+					"angle_offset": 0,
+					"offset": [ 0, -0.3, 0 ]
+				}
 			}
 		},
 		"components": {
@@ -62,6 +89,22 @@
 			}
 		},
 		"events": {
+			"minecraft:entity_spawned": {
+				"sequence": [
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "krampus"
+						},
+						"add": {
+							"component_groups": [
+								"krampus"
+							]
+						}
+					}
+				]
+			},
 			"festive_craze:op": {
 				"run_command": {
 					"command": [
