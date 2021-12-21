@@ -34,7 +34,6 @@
 					},
 					"power": 0.75,
 					"gravity": 0,
-					"homing": true,
 					"angle_offset": 0,
 					"offset": [ 0, -0.3, 0 ]
 				}

@@ -35,7 +35,8 @@
 					"require_complete_path": false,
 					"track_target": true,
 					"attack_once": false,
-					"reach_multiplier": 3
+					"reach_multiplier": 3,
+					"speed_multiplier": 1.25
 				},
 				"minecraft:attack": {
 					"damage": 15
@@ -74,7 +75,7 @@
 			"roaring": {
 				"minecraft:behavior.knockback_roar": {
 					"priority": 0,
-					"attack_time": 0.3,
+					"attack_time": 0.5,
 					"duration": 1.5,
 					"knockback_strength": 3,
 					"knockback_damage": 9,

@@ -40,6 +40,9 @@
 		},
 		"invisible_texture": {
 			"textures": "textures/blocks/invis_texture"
+		},
+		"corrupted_present": {
+			"textures": "textures/blocks/corrupted_present"
 		}
 	}
 }

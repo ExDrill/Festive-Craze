@@ -36,8 +36,7 @@
 				"controller.render.evoker"
 			],
 			"spawn_egg": {
-				"texture": "spawn_egg",
-				"texture_index": 40
+				"texture": "spawn_egg_wandering_trader"
 			}
 		}
 	}

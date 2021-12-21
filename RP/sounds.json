@@ -1,1 +1,17 @@
-{}
+{
+    "entity_sounds": {
+        "entities": {
+            "festive_craze:krampus": {
+                "volume": 1,
+                "pitch": 0.7,
+                "events": {
+                    "shoot": "random.glass",
+                    "ambient": "mob.ravager.ambient",
+                    "hurt": "mob.ravager.hurt",
+                    "death": "mob.ravager.death",
+                    "attack": "game.player.attack.strong"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+{
+	"format_version": "1.17.20",
+	"minecraft:block": {
+		"description": {
+			"identifier": "festive_craze:corrupted_present"
+		},
+		"components": {
+			"minecraft:on_player_destroyed": {
+				"event": "destroy",
+				"target": "self"
+			},
+			"minecraft:geometry": "geometry.present",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "corrupted_present",
+					"render_method": "alpha_test",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				}
+			},
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:destroy_time": 0.2,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:pick_collision": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					8,
+					10
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					8,
+					10
+				]
+			}
+		},
+		"events": {
+			"destroy": {
+				"run_command": {
+					"command": [
+						"particle festive_craze:corrupt_confetti_particle ~ ~ ~",
+						"summon festive_craze:krampus ~ ~ ~"
+					],
+					"target": "self"
+				}
+			}
+		}
+	}
+}
