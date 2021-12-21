@@ -16,11 +16,25 @@
 					"require_complete_path": false,
 					"track_target": true,
 					"attack_once": false
+				},
+				"minecraft:attack": {
+					"damage": 7
+				},
+				"minecraft:behavior.melee_attack": {
+					"priority": 0,
+					"track_target": true,
+					"speed_multiplier": 0.3
 				}
 			},
 			"ranged": {
 				"minecraft:shooter": {
 					"def": "festive_craze:frost_ball"
+				},
+				"minecraft:behavior.ranged_attack": {
+					"priority": 0,
+					"attack_interval_max": 4,
+					"attack_interval_min": 2,
+					"attack_radius": 15
 				}
 			},
 			"roaring": {
@@ -87,10 +101,22 @@
 							"value": "player"
 						}
 					}
-				]
+				],
+				"must_see": true,
+				"reselect_targets": true,
+				"within_radius": 30,
+				"must_see_forget_duration": 17
 			},
-			"minecraft:attack": {
-				"damage": 7
+			"minecraft:timer": {
+				"looping": true,
+				"time": 8,
+				"time_down_event": {
+					"event": "festive_craze:change_attack"
+				}
+			},
+			"minecraft:boss": {
+				"name": "Krampus",
+				"hud_range": 15
 			}
 		},
 		"events": {
@@ -146,6 +172,52 @@
 						"roaring"
 					]
 				}
+			},
+			"festive_craze:change_attack": {
+				"randomize": [
+					{
+						"add": {
+							"component_groups": [
+								"melee"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"ranged",
+								"roaring"
+							]
+						},
+						"weight": 3
+					},
+					{
+						"add": {
+							"component_groups": [
+								"ranged"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"melee",
+								"roaring"
+							]
+						},
+						"weight": 10
+					},
+					{
+						"add": {
+							"component_groups": [
+								"roaring"
+							]
+						},
+						"remove": {
+							"component_groups": [
+								"ranged",
+								"melee"
+							]
+						},
+						"weight": 1
+					}
+				]
 			}
 		}
 	}

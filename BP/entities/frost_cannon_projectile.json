@@ -46,8 +46,8 @@
 						}
 					}
 				},
-				"power": 1.5,
-				"gravity": 0.0,
+				"power": 0.75,
+				"gravity": 0,
 				"angle_offset": 0,
 				"offset": [
 					0,
