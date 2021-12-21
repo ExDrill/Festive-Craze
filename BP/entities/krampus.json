@@ -45,7 +45,10 @@
 					"cooldown_time": 1,
 					"knockback_strength": 3,
 					"knockback_damage": 9,
-					"knockback_range": 3
+					"knockback_range": 3,
+					"on_roar_end": {
+						"event": "festive_craze:change_attack"
+					}
 				}
 			}
 		},
